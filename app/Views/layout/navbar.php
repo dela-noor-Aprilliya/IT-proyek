@@ -18,7 +18,7 @@
               <span class="hide-menu">Home</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="/admin" aria-expanded="false">
+              <a class="sidebar-link" href="/Home/index" aria-expanded="false">
                 <span>
                   <i class="ti ti-layout-dashboard"></i>
                 </span>
@@ -30,57 +30,43 @@
               <span class="hide-menu">Menu</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="/kamar" aria-expanded="false">
+              <a class="sidebar-link" href="/DataBatako/index" aria-expanded="false">
                 <span>
                   <i class="ti ti-home"></i>
                 </span>
-                <span class="hide-menu">Kamar Kost</span>
+                <span class="hide-menu">Data Batako</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="/penghuni" aria-expanded="false">
-                <span>
-                  <i class="ti ti-users"></i>
-                </span>
-                <span class="hide-menu">Penghuni Kost</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="/laporan" aria-expanded="false">
+              <a class="sidebar-link" href="/Transaksi/index" aria-expanded="false">
                 <span>
                   <i class="ti ti-report"></i>
                 </span>
-                <span class="hide-menu">Laporan Tagihan</span>
+                <span class="hide-menu">Transaksi</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="/komplain_user" aria-expanded="false">
+              <a class="sidebar-link" href="/DataUser/index" aria-expanded="false">
                 <span>
-                  <i class="ti ti-bell"></i>
+                  <i class="ti ti-users"></i>
                 </span>
-                <span class="hide-menu">Komplain</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="/akun_user" aria-expanded="false">
-                <span>
-                  <i class="ti ti-user"></i>
-                </span>
-                <span class="hide-menu">Akun Penghuni</span>
+                <span class="hide-menu">Data User</span>
               </a>
             </li>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
               <span class="hide-menu">Keluar</span>
             </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="/login" aria-expanded="false">
-                <span>
-                  <i class="ti ti-logout"></i>
-                </span>
-                <span class="hide-menu">Logout</span>
-              </a>
-            </li>
+            <form action="/logout" method="post">
+              <li class="sidebar-item">
+                <button class="btn btn-secondary" type="submit" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-logout"></i>
+                  </span>
+                  <span class="hide-menu">Logout</span>
+                </button>
+              </li>
+            </form>
           </ul>
         </nav>
         <!-- End Sidebar navigation -->
