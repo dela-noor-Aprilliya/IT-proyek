@@ -30,7 +30,7 @@
               <span class="hide-menu">Menu</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="/DataBatako/index" aria-expanded="false">
+              <a class="sidebar-link" href="/DataBatako" aria-expanded="false">
                 <span>
                   <i class="ti ti-home"></i>
                 </span>
