@@ -100,15 +100,15 @@ https://templatemo.com/tm-591-villa-agency
             <div class="col-lg-12">
               <div class="item phone">
                 <img src="assets/images/phone-icon.png" alt="" style="max-width: 52px;">
-                <h6>010-020-0340<br><span>Nomor Telepon</span></h6>
+                <h6>085245463944<br><span>Nomor Telepon</span></h6>
               </div>
             </div>
-            <div class="col-lg-12">
+            <!-- <div class="col-lg-12">
               <div class="item email">
                 <img src="assets/images/email-icon.png" alt="" style="max-width: 52px;">
                 <h6>info@villa.co<br><span>Email</span></h6>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

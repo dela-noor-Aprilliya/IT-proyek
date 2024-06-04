@@ -90,7 +90,7 @@ https://templatemo.com/tm-591-villa-agency
       <div class="row">
         <div class="col-lg-4">
           <div class="left-image">
-            <img src="assets/images/featured.jpg" alt="">
+            <img src="assets/images/foto2.jpg" alt="">
             <img src="assets/images/featured-icon.png" alt="" style="max-width: 60px; padding: 0px;"></a>
           </div>
         </div>
@@ -154,69 +154,6 @@ https://templatemo.com/tm-591-villa-agency
             </div>
           </div>
         <?php endforeach; ?>
-      </div>
-    </div>
-    <div class="contact-page section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="section-heading">
-              <h6>| Kontak SIMKOST</h6>
-
-            </div>
-            <p>Anda dapat menghubungi kami dengan kontak berikut : </p>
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="item phone">
-                  <img src="assets/images/phone-icon.png" alt="" style="max-width: 52px;">
-                  <h6>010-020-0340<br><span>Nomor Telepon</span></h6>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="item email">
-                  <img src="assets/images/email-icon.png" alt="" style="max-width: 52px;">
-                  <h6>info@villa.co<br><span>Email</span></h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <form id="contact-form" action="" method="post">
-              <div class="row">
-                <div class="col-lg-12">
-                  <fieldset>
-                    <label for="name">Nama : </label>
-                    <input type="name" name="name" id="name" placeholder="Nama Anda..." autocomplete="on" required>
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <label for="email">Email </label>
-                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email Anda..." required="">
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <label for="subject">Nomor Telepon : </label>
-                    <input type="subject" name="subject" id="subject" placeholder="Nomor Telepon Anda..." autocomplete="on">
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <label for="message">Pesan</label>
-                    <textarea name="message" id="message" placeholder="Pesan Anda"></textarea>
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <button type="submit" id="form-submit" class="orange-button">Mengirim Pesan</button>
-                  </fieldset>
-                </div>
-              </div>
-            </form>
-          </div>
-
-        </div>
       </div>
     </div>
   </div>

@@ -91,7 +91,7 @@ https://templatemo.com/tm-591-villa-agency
       <div class="row">
         <div class="col-lg-8">
           <div class="main-image">
-            <img src="assets/images/single-property.jpg" alt="">
+            <img src="assets/images/foto1.jpg" alt="">
           </div>
           <div class="main-content">
             <h4>Apa itu web Toko Berkah Rezeki</h4>
