@@ -20,7 +20,7 @@
                         <i class="ti ti-square-plus fa-3"></i>
                         Tambah
                     </button>
-
+                    
                     <!-- Modal -->
                     <div class="modal fade" id="ModalTambahData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">

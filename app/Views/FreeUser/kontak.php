@@ -11,14 +11,15 @@
   <title>Berkah Rezeki</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="../FreeUser/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
   <!-- Additional CSS Files -->
-  <link rel="stylesheet" href="assets/css/fontawesome.css">
-  <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
-  <link rel="stylesheet" href="assets/css/owl.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="../freeuser/assets/css/fontawesome.css">
+  <link rel="stylesheet" href="../freeuser/assets/css/templatemo-villa-agency.css">
+  <link rel="stylesheet" href="../freeuser/assets/css/owl.css">
+  <link rel="stylesheet" href="../freeuser/assets/css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <!--
 
@@ -53,8 +54,8 @@ https://templatemo.com/tm-591-villa-agency
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <img src="assets/images/logo.png" alt="" style="max-width: 200px; padding: 0px;">
+            <a class="logo">
+              <img src="<?= base_url('freeuser/assets/images/logooo.png') ?>" alt="" style="max-width: 200px; padding: 0px;">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
@@ -63,7 +64,6 @@ https://templatemo.com/tm-591-villa-agency
               <li><a href="/FreeUser/tentangkami">Tentang Kami</a></li>
               <li><a href="/FreeUser/kontak"class="active">Kontak</a></li>
               <li><a href="kontak.html">Login</a></li>
-
               <li></li>
             </ul>
             <a class='menu-trigger'>
@@ -92,7 +92,7 @@ https://templatemo.com/tm-591-villa-agency
       <div class="row">
         <div class="col-lg-6">
           <div class="section-heading">
-            <h6>| Kontak Toko Berkah Rzeki</h6>
+            <h6>| Kontak Toko Berkah Rezeki</h6>
 
           </div>
           <p>Anda dapat menghubungi kami dengan kontak berikut : </p>

@@ -52,14 +52,14 @@ https://templatemo.com/tm-591-villa-agency
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <img src="assets/images/logo.png" alt="" style="max-width: 200px; padding: 0px;">
+            <a class="logo">
+              <img src="<?= base_url('freeuser/assets/images/logooo.png') ?>" alt="" style="max-width: 200px; padding: 0px;">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li><a href="/FreeUser/index">Beranda</a></li>
-              <li><a href="/FreeUser/tentangkami" class="active">Tentang Kami</a></li>
+              <li><a href="/FreeUser/index" >Beranda</a></li>
+              <li><a href="/FreeUser/tentangkami"class="active">Tentang Kami</a></li>
               <li><a href="/FreeUser/kontak">Kontak</a></li>
               <li><a href="kontak.html">Login</a></li>
               <li></li>

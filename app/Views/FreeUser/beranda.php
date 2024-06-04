@@ -5,8 +5,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <title>Berkah Rezeki</title>
 
@@ -92,8 +91,7 @@ https://templatemo.com/tm-591-villa-agency
         <div class="col-lg-4">
           <div class="left-image">
             <img src="assets/images/featured.jpg" alt="">
-            <img src="assets/images/featured-icon.png" alt=""
-                style="max-width: 60px; padding: 0px;"></a>
+            <img src="assets/images/featured-icon.png" alt="" style="max-width: 60px; padding: 0px;"></a>
           </div>
         </div>
         <div class="col-lg-5">
@@ -105,12 +103,11 @@ https://templatemo.com/tm-591-villa-agency
               <h2 class="accordion-header" id="headingOne">
 
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                Tak tergoyahkan oleh waktu, batako kami tegar menjaga kestabilan rumah impian Anda. Bangun dengan keyakinan, bangun dengan batako berkualitas.
-                 <a href="https://www.google.com/search?q=best+free+css+templates"
-                    target="_blank"></a></div>
+                  Tak tergoyahkan oleh waktu, batako kami tegar menjaga kestabilan rumah impian Anda. Bangun dengan keyakinan, bangun dengan batako berkualitas.
+                  <a href="https://www.google.com/search?q=best+free+css+templates" target="_blank"></a>
+                </div>
               </div>
             </div>
 
@@ -139,29 +136,91 @@ https://templatemo.com/tm-591-villa-agency
         <div class="col-lg-4 offset-lg-4">
           <div class="section-heading text-center">
             <h6>| DETAIL BATAKO </h6>
-            <h2>Inforamsi Tentang Batako</h2>
+            <h2>Informasi Tentang Batako</h2>
           </div>
         </div>
       </div>
       <div class="row">
-        <?php foreach($batako as $val):?>
-        <div class="col-lg-4 col-md-6">
-          <div class="item">
-            <a href="property-details.html"><img src="<?= base_url('uploads/' . esc($val['foto'])) ?>" alt=""></a>
-            <span class="category"><?= $val['nama_batako']?></span>
-            <h6><?= $val['harga']?></h6>
-            <h4>Stok:  <span><?= $val['stok']?></span></h4>
-            <div class="main-button">
-              <a href="property-details.html">Memesan</a>
+        <?php foreach ($batako as $val) : ?>
+          <div class="col-lg-4 col-md-6">
+            <div class="item">
+              <a href="property-details.html"><img src="<?= base_url('uploads/' . esc($val['foto'])) ?>" alt=""></a>
+              <span class="category"><?= $val['nama_batako'] ?></span>
+              <h6><?= $val['harga'] ?></h6>
+              <h4>Stok: <span><?= $val['stok'] ?></span></h4>
+              <div class="main-button">
+                <a href="property-details.html">Memesan</a>
+              </div>
             </div>
-            
           </div>
- 
+        <?php endforeach; ?>
+      </div>
+    </div>
+    <div class="contact-page section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="section-heading">
+              <h6>| Kontak SIMKOST</h6>
+
+            </div>
+            <p>Anda dapat menghubungi kami dengan kontak berikut : </p>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="item phone">
+                  <img src="assets/images/phone-icon.png" alt="" style="max-width: 52px;">
+                  <h6>010-020-0340<br><span>Nomor Telepon</span></h6>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="item email">
+                  <img src="assets/images/email-icon.png" alt="" style="max-width: 52px;">
+                  <h6>info@villa.co<br><span>Email</span></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <form id="contact-form" action="" method="post">
+              <div class="row">
+                <div class="col-lg-12">
+                  <fieldset>
+                    <label for="name">Nama : </label>
+                    <input type="name" name="name" id="name" placeholder="Nama Anda..." autocomplete="on" required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <label for="email">Email </label>
+                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email Anda..." required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <label for="subject">Nomor Telepon : </label>
+                    <input type="subject" name="subject" id="subject" placeholder="Nomor Telepon Anda..." autocomplete="on">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <label for="message">Pesan</label>
+                    <textarea name="message" id="message" placeholder="Pesan Anda"></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="orange-button">Mengirim Pesan</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+
         </div>
-        <?php endforeach;?>
       </div>
     </div>
   </div>
+
 
 
   <!-- Scripts -->

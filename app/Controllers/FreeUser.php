@@ -22,6 +22,11 @@ class FreeUser extends BaseController
     {
         return view('/FreeUser/tentangkami');
     }
+
+    public function formpemesanan()
+    {
+        return view('/FreeUser/formpemesanan');
+    }
 }
 
 
