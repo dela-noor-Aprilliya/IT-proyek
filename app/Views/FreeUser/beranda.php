@@ -51,9 +51,9 @@ https://templatemo.com/tm-591-villa-agency
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a class="logo">
-              <img src="<?= base_url('freeuser/assets/images/logooo.png') ?>" alt="" style="max-width: 200px; padding: 0px;">
-            </a>
+            <div style="height: 100px; display: flex;  overflow: hidden;" class="logo">
+              <img src="<?= base_url('freeuser/assets/images/logooo.png') ?>" alt="" style="width: 400px; object-fit: cover; padding: 0px;">
+            </div>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
@@ -73,15 +73,14 @@ https://templatemo.com/tm-591-villa-agency
     </div>
   </header>
   <!-- ***** Header Area End ***** -->
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
 
-  <div class="main-banner">
-    <div class="owl-carousel owl-banner">
-      <div class="item item-1">
-        <div class="header-text">
-          <h2>Cari Batako<br><br>Di Berkah Rezeki Aja!</h2>
+          <h3>Beranda</h3>
         </div>
       </div>
-
     </div>
   </div>
 

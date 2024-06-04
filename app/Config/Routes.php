@@ -8,7 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 
 $routes->get('/FreeUser/index', 'FreeUser::index');
 $routes->get('/', 'FreeUser::index');
-$routes->get('/Home/index', 'Home::index');
+$routes->get('/Home/index', 'DataBatako::index');
 $routes->get('/FreeUser/kontak', 'FreeUser::kontak');
 $routes->get('/FreeUser/tentangkami', 'FreeUser::tentangkami');
 $routes->get('/FreeUser/formpemesanan', 'FreeUser::formpemesanan');
