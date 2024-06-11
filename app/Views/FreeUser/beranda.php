@@ -60,7 +60,7 @@ https://templatemo.com/tm-591-villa-agency
               <li><a href="/FreeUser/index" class="active">Beranda</a></li>
               <li><a href="/FreeUser/tentangkami">Tentang Kami</a></li>
               <li><a href="/FreeUser/kontak">Kontak</a></li>
-              <li><a href="kontak.html">Login</a></li>
+              <li><a href="/FreeUser/login">Login</a></li>
               <li></li>
             </ul>
             <a class='menu-trigger'>

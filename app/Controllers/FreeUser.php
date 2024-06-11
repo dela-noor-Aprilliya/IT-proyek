@@ -8,6 +8,9 @@ class FreeUser extends BaseController
 {
     public function index()
     {
+        // dd(session()->get('level'));
+        
+     
         $model = new DataBatakoModel();
         $data['batako'] = $model -> findAll();
         return view('/FreeUser/beranda', $data);

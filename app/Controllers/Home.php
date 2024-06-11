@@ -6,6 +6,7 @@ class Home extends BaseController
 {
     public function index()
     {
+       
         $data =  array(
             'title' => 'Dashboard',
             'isi' => 'Admin/dashboard'

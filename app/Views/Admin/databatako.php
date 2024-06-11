@@ -63,56 +63,6 @@
                     </div>
                 </div>
 
-                <div class="mb-2"></div>
-
-                <form action="" method="post">
-                    <div class="col-4">
-
-                    </div>
-                </form>
-            </div>
-
-            <table class="table align-middle">
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th scope="col">Nama Batako</th>
-                        <th scope="col">Stok</th>
-                        <th scope="col">Harga</th>
-                        <th scope="col">Foto</th>
-                        <th scope="col">Aksi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php if (isset($DataBatako) && !empty($DataBatako)) : ?>
-                        <?php
-                        $no = 1;
-                        foreach ($DataBatako as $item) : ?>
-                            <tr>
-                                <td><?= $no++ ?></td>
-                                <td><?= esc($item['nama_batako']) ?></td>
-                                <td><?= esc($item['stok']) ?></td>
-                                <td><?= esc($item['harga']) ?></td>
-                                <td><img src="<?= base_url('uploads/' . esc($item['foto'])) ?>" alt="Foto Batako" style="max-width: 100px;"></td>
-                                <td>
-                                    <a href="#" class="dropdown-item has-icon" data-bs-toggle="modal" data-bs-target="#editModal<?= esc($item['id_batako']) ?>">
-                                        <i class="ti ti-pencil"></i>
-                                        Edit
-                                    </a>
-
-                                    <a href="#" class="dropdown-item has-icon text-danger" data-bs-toggle="modal" data-bs-target="#deleteModal<?= esc($item['id_batako']) ?>">
-                                        <i class="ti ti-trash"></i>Hapus
-                                    </a>
-                                </td>
-                            </tr>
-                        <?php endforeach; ?>
-                    <?php else : ?>
-                    <?php endif; ?>
-                </tbody>
-            </table>
-
-
-
             <?php foreach ($DataBatako as $item) : ?>
                 <!-- MODAL EDIT -->
                 <div class="modal fade" id="editModal<?= esc($item['id_batako']) ?>" tabindex="-1" aria-labelledby="editModalLabel<?= esc($item['id_batako']) ?>" aria-hidden="true">
@@ -167,8 +117,14 @@
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body">
-                                Apakah Anda yakin ingin menghapus data ini?
+                            <div class="modal-body">    <div class="mb-2"></div>
+
+                <form action="" method="post">
+                    <div class="col-4">
+
+                    </div>
+                </form>
+                Apakah Anda yakin ingin menghapus data ini?
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-light" data-dismiss="modal">Batal</button>
@@ -177,7 +133,50 @@
                         </div>
                     </div>
                 </div>
+
             <?php endforeach; ?>
+
+            <table class="table align-middle">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th scope="col">Nama Batako</th>
+                        <th scope="col">Stok</th>
+                        <th scope="col">Harga</th>
+                        <th scope="col">Foto</th>
+                        <th scope="col">Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php if (isset($DataBatako) && !empty($DataBatako)) : ?>
+                        <?php
+                        $no = 1;
+                        foreach ($DataBatako as $item) : ?>
+                            <tr>
+                                <td><?= $no++ ?></td>
+                                <td><?= esc($item['nama_batako']) ?></td>
+                                <td><?= esc($item['stok']) ?></td>
+                                <td><?= esc($item['harga']) ?></td>
+                                <td><img src="<?= base_url('uploads/' . esc($item['foto'])) ?>" alt="Foto Batako" style="max-width: 100px;"></td>
+                                <td>
+                                    <a href="#" class="dropdown-item has-icon" data-bs-toggle="modal" data-bs-target="#editModal<?= esc($item['id_batako']) ?>">
+                                        <i class="ti ti-pencil"></i>
+                                        Edit
+                                    </a>
+
+                                    <a href="#" class="dropdown-item has-icon text-danger" data-bs-toggle="modal" data-bs-target="#deleteModal<?= esc($item['id_batako']) ?>">
+                                        <i class="ti ti-trash"></i>Hapus
+                                    </a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    <?php else : ?>
+                    <?php endif; ?>
+                </tbody>
+            </table>
+
+
+                        
 
             <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">

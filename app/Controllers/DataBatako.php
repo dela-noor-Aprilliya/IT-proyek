@@ -8,6 +8,10 @@ class DataBatako extends BaseController
 {
     public function index()
     {
+        // if(session()->get('level') != 'admin' && session()->get('level') != 'owner'){
+        //     return redirect()->to('FreeUser/login');
+
+        // }
         $model = new DataBatakoModel();
         $data =  array(
             'title' => 'Data Batako',

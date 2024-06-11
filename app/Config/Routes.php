@@ -22,4 +22,11 @@ $routes->post('DataBatako/editBatako/(:any)', 'DataBatako::editBatako/$1');
 $routes->get('DataBatako/hapusBatako/(:any)', 'DataBatako::hapusBatako/$1');
 
 $routes->get('/Transaksi/index', 'Transaksi::index');
+$routes->post('Transaksi/tambahTransaksi', 'Transaksi::tambahTransaksi');
+$routes->post('Transaksi/editTransaksi/(:any)', 'Transaksi::editTransaksi/$1');
+$routes->get('transaksi/delete/(:num)', 'Transaksi::delete/$1');
+
 $routes->get('/DataUser/index', 'DataUser::index');
+
+$routes->get('/FreeUser/login', 'Login::index');
+$routes->post('/akses/login', 'Login::ceklogin');
